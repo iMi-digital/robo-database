@@ -16,6 +16,6 @@
     },
     "require": {
         "consolidation/robo": "^1.0.0",
-        "imi/database-helper": "^0.1.0",
+        "imi/database-helper": "^0.1.0"
     }
 }
