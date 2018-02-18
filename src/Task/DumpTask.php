@@ -16,9 +16,10 @@ class DumpTask extends StackBasedTask
 	 *
 	 * @throws \Robo\Exception\TaskException
 	 */
-    public function __construct($databaseSettings)
+    public function __construct($databaseSettings, $tableGroupDefinitions = [])
     {
         $this->_helper = new Mysql($databaseSettings);
+        $this->_helper->setTableDefinitions($tableGroupDefinitions);
         $this->_operation = new Dump($this->_helper);
     }
 
