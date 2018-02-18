@@ -1,0 +1,21 @@
+{
+    "name": "imi/robo-database",
+    "description": "iMi Package Tasks for Robo task runner",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "iMi digital GmbH",
+            "email": "a.menk@imi.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "iMi\\RoboDatabase\\" : "src",
+            "iMi\\RoboDatabase\\Test\\" : "test"
+        }
+    },
+    "require": {
+        "consolidation/robo": "^1.0.0",
+        "imi/database-helper": "^0.1.0",
+    }
+}
